@@ -8,12 +8,10 @@ import { TSection } from "@/components/pages/Trending_token/T_token";
 export default function Home() {
 
   return <div>
-
-<HeroSection />
-
-<TSection />
-  
-  </div>
+       <section>
+       <HeroSection />
+       </section>
+      </div>
  
 
 }

@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 export function TSection()
 {
 
-    return <section className="flex flex-col space-y-10 items-center mt-96">
+    return <section className="flex flex-col space-y-10 items-center ">
         <div className="text-center font-light text-5xl">
             Trending Token
         </div>
