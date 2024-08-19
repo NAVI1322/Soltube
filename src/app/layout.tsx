@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { NavBar } from "@/components/NavBar/NavBar";
+import { ThemeProvider } from "@/components/theme-provider";
+
 
 
 
@@ -22,11 +24,19 @@ export default function RootLayout({
 
     <Providers>
       <html lang="en">
-      
+     
       <body className={inter.className } >
-       <NavBar />
+      <ThemeProvider 
+       attribute="class"
+       defaultTheme="system"
+       enableSystem
+       disableTransitionOnChange>
+        
         {children}
+        </ThemeProvider>
         </body>
+    
+    
     </html>
     </Providers>
       
